@@ -1,0 +1,11 @@
+SELECT * FROM cities; -- here * means take all rows of cities
+
+-- but we can take specific row or rows by row name instead of using *
+-- example:
+
+SELECT area,country,name FROM cities;  -- for multiple rows, here the rows will print according to the name which 
+-- is given first then second and then third
+
+-- or
+
+SELECT population FROM cities; -- for single row

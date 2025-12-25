@@ -1,0 +1,29 @@
+-- using pre created tables and insert values
+
+-- we can use just JOIN instead of INNER JOIN . cause both mean same
+
+
+-- first join operation
+SELECT content, username, photo_id FROM comments
+JOIN users ON users.id = comments.user_id
+-- imagine JOIN create a temporary table, name= comments with users and then match the users id with the foreign key(user_id) of comments table
+
+
+-- second join operation
+SELECT contents, url from comments
+JOIN photos ON photos.id = comments.photo_id
+-- after this JOIN statement, the contents and the url of the same photos id will be shown. cause both comments and photos table have the same photos id 
+-- comments table contains the photo_id and photos table has it own id for the url
+
+
+-- if we want to print the ids of photos and comments
+SELECT photos.id AS photo_ids , comments.id AS comment_ids FROM photos
+JOIN comments ON photos.id = comments.photo_id
+
+
+-- we can also change the table name during query
+SELECT comments.id as comment_ids , p.id as photo_ids 
+FROM photos AS p
+JOIN comments ON p.id = comments.photo_id
+
+-- if we put any NULL value in photos user_id .. then after JOIN operation, that NULL row wouldn't print. only the matches id's rows will print

@@ -1,0 +1,10 @@
+INSERT INTO crew_members (first_name, boat_id) -- here boat_id used as a foreign key
+
+VALUES 
+  ('Alex', 1),
+  ('Lucia', 1),
+  ('Ari' , 2),
+  ('Arif' , 1),
+  ('Arin' , 2),
+  ('Arid' , 2),
+  ('Arik' , 2);

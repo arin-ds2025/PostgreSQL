@@ -1,0 +1,11 @@
+String Operators & Functions
+
+1.  ||  ->  Join two strings
+
+2.  CONCAT()  ->  Join two strings
+
+3.  LOWER()  ->  Gives a lower case string
+
+4.  LENGTH()  ->  Gives number of characters in a string
+
+5.  UPPER()  ->  Gives a upper case string

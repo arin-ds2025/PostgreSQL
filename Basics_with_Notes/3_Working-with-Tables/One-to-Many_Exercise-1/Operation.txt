@@ -1,0 +1,6 @@
+SELECT name, first_name FROM crew_members
+JOIN boats ON boats.id = crew_members.boat_id
+
+-- or , more specifically
+SELECT * FROM crew_members
+WHERE boat_id = 1  -- cause in crew_members table the id of boats table have been already take as foreign key, using REFERENCES keyword

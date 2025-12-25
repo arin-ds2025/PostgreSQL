@@ -1,0 +1,11 @@
+SELECT name, manufacture FROM phones 
+WHERE 
+   manufacture = 'Apple' OR manufacture = 'Samsung' ;
+
+
+-- or
+
+
+SELECT name, manufacture FROM phones 
+WHERE 
+   manufacture IN ('Apple' , 'Samsung') ;

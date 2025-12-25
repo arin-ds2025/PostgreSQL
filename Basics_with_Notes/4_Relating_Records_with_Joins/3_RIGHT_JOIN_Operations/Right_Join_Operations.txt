@@ -1,0 +1,9 @@
+-- here if we insert extra username in users table and then use RIGHT JOIN keywords then those extra usernames will print , after matched ids
+-- here in case of use RIGHT JOIN keywords for extra users table, the other side of photos column it will show NULL for each extra users, 
+-- cause the url for those extra users was empty
+
+
+SELECT url,username FROM photos
+RIGHT JOIN users ON users.id = photos.user_id
+
+-- here left is photos(FROM) and right is users(JOIN)

@@ -1,0 +1,11 @@
+-- for use subquries in FROM, we've to SELECT exactly same things in main and sub queries.. example:
+
+SELECT name,price_to_weight_ratio
+FROM (SELECT name,price/weight AS price_to_weight_ratio FROM products) as p -- we've to use alias (here it is P), in case of using subquery in FROM
+WHERE price_to_weight_ratio > 5
+
+
+
+SELECT *
+FROM ( SELECT MAX(price) FROM products) AS hakao
+

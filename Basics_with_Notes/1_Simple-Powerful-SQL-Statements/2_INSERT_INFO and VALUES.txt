@@ -1,0 +1,15 @@
+-- in INSERT INTO() we've to put the rows' name
+INSERT INTO cities (name, country, population, area)
+
+/* in VALUES() we've to put the values of the table,according 
+to the order of rows' name and their data type 
+and we've to put string or VARCHAR(length) data with single quotation '' in VALUES()
+*/
+VALUES ('Tokyo' , 'Japan' , 38505000 , 8223); 
+
+/* in case of store multiple values: */
+ VALUES
+      ('Islamabad' , 'Pakistan' , 12073022 , 2580),
+      ('Shanghai' , 'China' , 22125000 , 4015),
+      ('Tokyo' , 'Japan' , 38505000 , 8223),
+      ('Dhaka' , 'Bangladesh' , 10027985 , 1207);		

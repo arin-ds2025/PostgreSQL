@@ -1,0 +1,6 @@
+SELECT AVG(order_count)  -- we can also use AVG(p.order_count)  both mean the same thing
+FROM (
+    SELECT user_id, COUNT(*) AS order_count
+    FROM orders
+    GROUP BY user_id
+) AS p

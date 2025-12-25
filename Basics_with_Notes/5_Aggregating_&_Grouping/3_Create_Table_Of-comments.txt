@@ -1,0 +1,6 @@
+CREATE TABLE comments (
+	id SERIAL PRIMARY KEY,
+	contents VARCHAR(500),
+	user_id INTEGER REFERENCES users(id),
+	photo_id INTEGER REFERENCES photos(id)
+);

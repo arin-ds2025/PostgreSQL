@@ -1,0 +1,20 @@
+-- using pre created tables and inserted values
+
+
+-- for both paid and unpaid (true and false)
+SELECT first_name,last_name, paid 
+FROM users
+JOIN orders ON orders.user_id = users.id
+
+
+-- for only paid (true)
+SELECT first_name,last_name, paid 
+FROM users
+JOIN orders ON orders.user_id = users.id
+WHERE paid = true  -- orders JOIN at last so we've to add the clause after the JOIN statement
+
+-- for only unpaid (false)
+SELECT first_name,last_name, paid 
+FROM users
+JOIN orders ON orders.user_id = users.id
+WHERE paid = false -- orders JOIN at last so we've to add the clause after the JOIN statement

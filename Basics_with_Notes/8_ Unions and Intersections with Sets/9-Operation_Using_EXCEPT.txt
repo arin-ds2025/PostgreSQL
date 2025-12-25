@@ -1,0 +1,12 @@
+(
+	SELECT id,name FROM products
+	ORDER BY price DESC
+	LIMIT 4 -- we can't use ; while using EXCEPT keyword to except below queries
+)
+
+EXCEPT -- it will print before EXCEPT queries but remove all those rows which is also exist in after EXCEPT queries
+(
+	SELECT id,name FROM products
+	ORDER BY price/weight DESC
+	LIMIT 4 -- we can't use ; while using EXCEPT keyword to except this queries
+); -- now can put ; here to mean that exception is end

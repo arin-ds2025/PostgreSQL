@@ -1,0 +1,8 @@
+INSERT INTO cities (name, country, population, area)
+
+VALUES
+      ('Islamabad' , 'Pakistan' , 12073022 , 2580),
+      ('Shanghai' , 'China' , 22125000 , 4015),
+      ('Tokyo' , 'Japan' , 38505000 , 8223),
+      ('Dhaka' , 'Bangladesh' , 10027985 , 1207),
+      ('Tehran' , 'Iran' , 10500897 , 2207);		

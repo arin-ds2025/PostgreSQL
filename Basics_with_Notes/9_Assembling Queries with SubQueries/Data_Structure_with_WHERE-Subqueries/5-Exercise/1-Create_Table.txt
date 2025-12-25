@@ -1,0 +1,6 @@
+CREATE TABLE phones (
+	name VARCHAR(50),
+	manufacture VARCHAR(50),
+	price FLOAT,  -- we can also use floating value for better clearity
+	units_sold INTEGER
+);

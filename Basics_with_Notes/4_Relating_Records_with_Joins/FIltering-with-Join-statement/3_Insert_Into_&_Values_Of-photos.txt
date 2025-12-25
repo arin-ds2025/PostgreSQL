@@ -1,0 +1,6 @@
+INSERT INTO photos (url, user_id)
+
+VALUES
+	('https://santina.net', 2),
+        ('https://alayna.net', 3),
+        ('https://kailyn.name', 5);

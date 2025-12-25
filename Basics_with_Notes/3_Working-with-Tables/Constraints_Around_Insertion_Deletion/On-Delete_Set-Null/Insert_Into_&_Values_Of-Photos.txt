@@ -1,0 +1,10 @@
+INSERT INTO photos (url, user_id) -- unique id generated automatically, so we don't need to insert any kind of id 
+-- here id means primary key and user_id means foreign key
+-- here we've to define the user_id for insertion, to indicate the unique id of users
+
+VALUES
+  ('https://02.jpg', 1),
+  ('https://03.jpg', 1),
+  ('https://04.jpg', 1),
+  ('https://05.jpg', 2),
+  ('https://06.jpg', 3),

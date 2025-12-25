@@ -1,0 +1,55 @@
+-- for 4 highest price products
+SELECT * FROM products
+ORDER BY price DESC
+LIMIT 4;
+
+
+-- for 4 products with the highest price/weight ration
+SELECT * FROM products
+ORDER BY price/weight DESC
+LIMIT 4;
+
+
+
+
+-- now with combined.. using UNION keyword
+
+(
+	SELECT * FROM products
+	ORDER BY price DESC
+	LIMIT 4 -- we can't use ; while using UNION keyword to combine
+)
+
+UNION -- before and after combine, using UNION keyword, we've to put queries in () and it will print duplicate rows ones, means those rows which exist in both those queries
+
+(
+	SELECT * FROM products
+	ORDER BY price/weight DESC
+	LIMIT 4 -- we can't use ; while using UNION keyword to combine
+); -- now can put ; here to mean that combination is end
+
+
+
+-- now with combined.. using UNION keyword
+
+(
+	SELECT * FROM products
+	ORDER BY price DESC
+	LIMIT 4 -- we can't use ; while using UNION keyword to combine
+)
+
+UNION ALL -- before and after combine, using UNION ALL keyword, we've to put queries in () and it will print now all duplicate rows 
+
+(
+	SELECT * FROM products
+	ORDER BY price/weight DESC
+	LIMIT 4 -- we can't use ; while using UNION keyword to combine
+); -- now can put ; here to mean that combination is end
+
+
+
+note: before and after queries of UNION, those queries should have to select same data_type columns...
+--example:
+SELECT name FROM products
+UNION
+SELECT price FROM products -- this is not valid, cause in before UNION queries, there selected string type column , if we choose weight then it'll valid, cause both are integer type columns

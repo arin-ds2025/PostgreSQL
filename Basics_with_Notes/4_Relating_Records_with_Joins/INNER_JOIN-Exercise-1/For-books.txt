@@ -1,0 +1,16 @@
+CREATE TABLE books (
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(50),
+	author_id INTEGER REFERENCES authors(id)
+);
+
+
+INSERT INTO books (title, author_id)
+VALUES 
+     ('Transformers-The Last Knight', 2), 
+     ('Transformers', 1), 
+     ('Transformers-Revenge of the Fallen', 3), 
+     ('Transformers-Dark of the Moon', 1), 
+     ('Transformers-Age of Extinction', 4), 
+     ('Bumblebee', 1), 
+     ('Transformers-Rise of the Beasts', 2);

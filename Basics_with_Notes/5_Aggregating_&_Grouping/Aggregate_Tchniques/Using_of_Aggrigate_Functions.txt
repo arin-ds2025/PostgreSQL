@@ -1,0 +1,23 @@
+-- if we want to get the maximum value of anything. we can use MAX() function
+SELECT MAX(id)
+FROM comments
+
+
+-- if we want to get the minimum value of anything. we can use MIN() function
+SELECT MIN(id)
+FROM photos
+
+
+-- if we want to get the average of values, then we can use AVG() function
+SELECT AVG(id)
+FROM users
+
+
+-- if we want to get the counts of values, then we can use COUNT() function
+SELECT COUNT(id)
+FROM comments
+
+
+-- if we want to get the total of values, then we can use SUM() function
+SELECT SUM(id)
+FROM comments

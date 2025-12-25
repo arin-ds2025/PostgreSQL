@@ -1,0 +1,19 @@
+-- we've to use UPDATE keyword to choose the table
+UPDATE phones
+
+-- then we've to set the value with overwriting an value or update the value using SET keyword
+SET name = 'Iphone 5'
+
+
+-- then we've to choose any other column from that row using WHERE keyword
+WHERE manufacture = 'Apple'  -- in case of using WHERE keyword, we've to careful about giving conditions, in somewhere we need to give
+-- multiple conditions using AND,OR keywords for specify the row. cause there might be same thing in multiple rows
+
+
+
+-- after updating we can see the whole table by 
+SELECT * FROM phones; 
+
+---- after updating we can see the particular row from the table which we just updated by
+SELECT manufacture, name FROM phones WHERE name = 'Iphone 5' ;
+

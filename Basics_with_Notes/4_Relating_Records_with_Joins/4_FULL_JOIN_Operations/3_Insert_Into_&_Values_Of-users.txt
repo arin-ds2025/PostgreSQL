@@ -1,0 +1,10 @@
+INSERT INTO users (username)
+
+VALUES
+	('Reyna.Marvin'),
+        ('Micah.Cremin'),
+        ('Alfredo66'),
+        ('Gerard_Mitchell42'),
+        ('Frederique_Donnelly'),
+	('shabbir2021b'),
+	('arin2023b');

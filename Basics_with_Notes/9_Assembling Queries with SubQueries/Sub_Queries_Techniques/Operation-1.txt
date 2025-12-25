@@ -1,0 +1,9 @@
+SELECT name,price,(SELECT MAX(price) FROM products) -- we can't use ; after subqueries
+FROM products  
+WHERE price > 867
+
+
+SELECT name,price,(SELECT price FROM products WHERE id = 3) AS id_3_price -- we can rename the subquery for the new column name in main query
+FROM products   
+WHERE price > 867
+-- for the rename of the subquery , we'll get the correct output.. cause here the query name and subquery name are same, so we need to rename one of them

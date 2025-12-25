@@ -1,0 +1,6 @@
+SELECT MAX(p.avg_price)
+FROM (
+	SELECT AVG(price) AS avg_price
+	FROM phones
+	GROUP BY manufacture
+) AS p

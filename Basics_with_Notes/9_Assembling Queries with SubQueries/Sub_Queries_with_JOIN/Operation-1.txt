@@ -1,0 +1,20 @@
+-- we've to use alias with JOIN-subqueries, as like FROM-subqueries
+
+
+-- with subqueries
+SELECT first_name
+FROM users
+
+JOIN (
+	SELECT user_id FROM orders
+	WHERE product_id = 3
+)AS o -- this is the alias (AS o) the name of the alias can be anything
+
+ON o.user_id = users.id;
+
+
+
+-- without subqueries
+SELECT first_name FROM users
+JOIN orders ON orders.user_id = users.id
+WHERE product_id = 3; 

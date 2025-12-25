@@ -1,0 +1,19 @@
+SELECT name, population / area  FROM cities;
+
+/*
+   here we can measure the density of the are by doing direct divide population by area..
+   but the column name of that density column will be ?column? .. cause we didn't give any column name for the          	density. so we can use AS keyword to set the name of the new column after that calculation.. but new column name should be all in lower case. if we put any upper case alphabet then it'll convert in lower case autometically
+
+   we can use math operators:
+   (+)  ->  add       
+   (-)  ->  subtract
+   (*)  ->  multiply
+   (/)  ->  divide
+   (^)  ->  exponent
+
+   ( |/ )  ->  square root
+   (@)  ->  absolute value
+   (%)  -> remainder 
+*/ 
+
+SELECT country, name , population / area AS density FROM cities; -- the new column will be density

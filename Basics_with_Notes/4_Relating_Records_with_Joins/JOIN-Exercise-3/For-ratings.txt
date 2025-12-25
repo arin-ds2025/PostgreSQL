@@ -1,0 +1,13 @@
+CREATE TABLE ratings (
+	id SERIAL PRIMARY KEY,
+	rating INTEGER,
+	reviewer_id INTEGER REFERENCES authors(id),
+	book_id INTEGER REFERENCES books(id)
+);
+
+
+INSERT INTO ratings (rating,reviewer_id,book_id)
+VALUES
+	(3,1,2),
+	(4,2,1),
+	(5,3,3);

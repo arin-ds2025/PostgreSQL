@@ -1,0 +1,27 @@
+-- using pre creatred tables and inserted values
+
+
+-- if we want to print last 10 users and skip first 40 users .. for this, we can use OFFSET keyword 
+SELECT * FROM users
+OFFSET 40; -- this means skip first 40 users and print next users. (in out users table, there is total 50 users)
+
+
+-- if we want to print first limited users, then we can use LIMIT keyword
+SELECT * FROM users
+LIMIT 10; -- it'll print first 10 users
+
+
+
+-- mixed of OFFSET and LIMIT  (1)
+SELECT * FROM users
+LIMIT 20 -- we can use ; if we can to use both LIMIT and OFFSET
+OFFSET 10;
+-- it'll print 11-30 users. means first skip 10 users and then print limited 20 users.. OFFSET get priority first
+
+
+
+-- mixed of OFFSET and LIMIT  (2)
+SELECT * FROM users
+OFFSET 30
+LIMIT 10;
+-- it'll print 31-40 users. means skip first 30 users and then print limited 10 users.

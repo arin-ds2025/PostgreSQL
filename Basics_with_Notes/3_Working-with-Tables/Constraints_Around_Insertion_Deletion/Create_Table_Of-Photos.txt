@@ -1,0 +1,11 @@
+CREATE TABLE photos (
+	id SERIAL PRIMARY KEY,
+	url VARCHAR(200),
+	user_id INTEGER REFERENCES users(id)
+);
+
+
+-- PRIMARY KEY keywords generate unique primary key for us and SERIAL keyword used for get unique serial primary keys 
+
+-- REFERENCES used for indicate another table's unique id. basically it's used as foreign keys, depending on unique id
+-- but after REFERENCES keyword we've to mention the another table's name and inside (), the id of another table

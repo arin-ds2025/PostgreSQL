@@ -1,0 +1,11 @@
+-- in case of phones table, which has been already made
+
+-- we can formate the one line into these parts
+SELECT 
+    CONCAT(UPPER(manufacture), ', ', UPPER(name)) AS manufacture_model  -- but we can't do UPPER(manufacture_model)
+FROM phones;
+
+-- or directly:
+SELECT 
+    UPPER(CONCAT(manufacture, ', ', name)) AS manufacture_model
+FROM phones;

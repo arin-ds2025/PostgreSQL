@@ -1,0 +1,16 @@
+-- CREATE TABLE is a keyword which used for create tables 
+-- citites is a identifier or name of the table
+
+
+CREATE TABLE cities (
+	name VARCHAR(50),
+  country VARCHAR(50),
+  population INTEGER,
+  area INTEGER
+);
+
+
+/*
+	VARCHAR is variable length character. and inside the ()
+  we give the length of the character. 
+*/

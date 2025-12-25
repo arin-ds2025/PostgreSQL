@@ -1,0 +1,13 @@
+SELECT manufacture
+FROM phones
+WHERE price < 170
+
+UNION
+
+SELECT manufacture
+FROM phones
+GROUP BY manufacture
+HAVING COUNT(*) > 2
+ 
+
+-- we don't need () here .. cause both cases are different

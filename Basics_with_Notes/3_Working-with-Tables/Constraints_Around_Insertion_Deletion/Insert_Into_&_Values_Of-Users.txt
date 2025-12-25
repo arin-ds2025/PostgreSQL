@@ -1,0 +1,7 @@
+INSERT INTO users (username) -- unique user id generated automatically, so we don't need to insert any kind of id 
+
+VALUES
+  ('arin2023b'),
+  ('shabbir2021c'),
+  ('nayem2022m'),
+  ('momen2025d');

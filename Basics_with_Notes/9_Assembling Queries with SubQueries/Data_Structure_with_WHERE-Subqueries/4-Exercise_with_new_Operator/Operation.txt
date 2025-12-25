@@ -1,0 +1,7 @@
+-- SOME and ANY both mean and do the same thing, so we can use any one of them 
+
+
+SELECT name,department,price FROM products
+WHERE price > SOME (   -- or WHERE price > ANY ()
+	SELECT price FROM products WHERE department = 'Industrial'
+);

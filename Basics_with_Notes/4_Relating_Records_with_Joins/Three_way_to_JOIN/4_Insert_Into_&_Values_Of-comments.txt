@@ -1,0 +1,6 @@
+INSERT INTO comments (contents, user_id, photo_id)
+
+VALUES
+	('Quo velit iusto ducimus quos a incidunt nesciunt facilis.', 2, 2),
+        ('Non est totam.', 5, 3),
+        ('Fuga et iste beatae.', 3, 1);

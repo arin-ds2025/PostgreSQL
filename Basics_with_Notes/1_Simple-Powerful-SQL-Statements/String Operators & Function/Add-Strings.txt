@@ -1,0 +1,8 @@
+-- in case of citites table, which has been already made
+-- for maintain distance we can also use external string, using ''
+
+-- add strings using || operator
+SELECT country || ', ' || name AS country_city FROM cities;  -- here, new column name is country_city
+
+-- add strings using CONCAT() function
+SELECT CONCAT(country, ', ' , name) AS location FROM cities;  -- here, new column name is location

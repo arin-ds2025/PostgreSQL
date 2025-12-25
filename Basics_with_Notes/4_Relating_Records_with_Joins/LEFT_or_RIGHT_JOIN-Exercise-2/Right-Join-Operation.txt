@@ -1,0 +1,3 @@
+SELECT books.id AS books_id, title, name, authors.id AS authors_id
+FROM books
+RIGHT JOIN authors ON authors.id = books.author_id; -- in left author.id and in right books.author_id

@@ -1,0 +1,7 @@
+-- using pre created tables and inserted values
+
+
+-- it'll show paid and unpaid (true and false) count
+SELECT paid, COUNT(*)
+FROM orders
+GROUP BY paid

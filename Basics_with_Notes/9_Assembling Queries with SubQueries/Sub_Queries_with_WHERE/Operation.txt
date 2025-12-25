@@ -1,0 +1,13 @@
+-- with subqueris
+SELECT id
+FROM orders
+WHERE product_id IN (
+	SELECT id FROM products
+	WHERE price/weight > 300
+);
+
+
+-- without subqueries
+SELECT orders.id FROM orders -- we've to mention orders for get the orders id, cause both orders and products table have their own id 
+JOIN products ON products.id = orders.product_id
+WHERE price/weight > 300;

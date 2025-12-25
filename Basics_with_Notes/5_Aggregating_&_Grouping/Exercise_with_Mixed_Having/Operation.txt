@@ -1,0 +1,4 @@
+SELECT manufacture, SUM(price * units_sold)
+FROM phones
+GROUP BY manufacture
+HAVING SUM(price * units_sold) > 2000000 ;

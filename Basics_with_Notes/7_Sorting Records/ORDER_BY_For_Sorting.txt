@@ -1,0 +1,26 @@
+-- we can sorting table using ORDER BY keyword and then column name
+
+
+-- if we want to sort the table in ascending order by pricing 
+SElECT * FROM products
+ORDER BY price;  -- it default print in ascending order,,, we can also user ASC keyword after column name to mean ascending order
+
+
+-- if we want to sort the table in descending order by weight .. then we've to use DESC keyword after the column name 
+SElECT * FROM products
+ORDER BY weight DESC;
+
+
+-- we can also print strings in alphabetical ascending or descending order
+SELECT * FROM products
+ORDER BY name;
+
+
+-- we can also sort by multiple row in ascending or descending order
+ SELECT * FROM products
+ ORDER BY price,weight; -- both price and weight are in ascending order
+ ORDER BY price,weight DESC; -- price is in ascending order but weight is in descending order
+ ORDER BY price DESC,weight; -- weight is in ascending order but price is in descending order
+ ORDER BY price DESC,weight DESC; -- both price and weight are in descending order
+-- but here price is first priority then according to the price, weight get priority 
+

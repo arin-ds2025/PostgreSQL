@@ -1,0 +1,19 @@
+-- we've to use DELETE FROM keywords to choose the table
+DELETE FROM phones
+
+-- then we've to specify the row using WHERE keyword
+WHERE name = 'S5620 Monte' ;
+
+-- if we choose 
+WHERE name != 'S5620 Monte'; --or WHERE name <> 'S5620 Monte';
+-- except that row , all other rows will be deleted from the table
+
+
+
+-- after deletion, we can check the whole table by
+SELECT * FROM phones;
+
+
+-- if we want to get back that row then we've to use INSER INTO (name,manufacture,price,units_sold)
+-- and then VALUES('S5620 Monte', 'Samsung', 189, 3011);  that's it
+

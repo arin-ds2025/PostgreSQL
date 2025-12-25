@@ -1,0 +1,17 @@
+DROP TABLE photos; -- to remove the previous table with ON DELETE CASCADE keywords
+
+CREATE TABLE photos (
+	id SERIAL PRIMARY KEY,
+	url VARCHAR(200),
+	user_id INTEGER REFERENCES users(id) ON DELETE SET NULL
+);
+
+
+-- PRIMARY KEY keywords generate unique primary key for us and SERIAL keyword used for get unique serial primary keys 
+
+-- REFERENCES used for indicate another table's unique id. basically it's used as foreign keys, depending on unique id
+-- but after REFERENCES keyword we've to mention the another table's name and inside (), the id of another table
+
+-- for using this ON DELETE SET NULL, after delete any row of users table then those foreign keys who reference the users id, will be NULL after
+-- deletion of users table row
+

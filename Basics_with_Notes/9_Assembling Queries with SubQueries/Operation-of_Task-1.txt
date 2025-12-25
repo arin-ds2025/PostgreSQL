@@ -1,0 +1,6 @@
+-- we can user subquery in () as condition for a query
+
+SELECT name, price FROM products
+WHERE price > (
+	SELECT MAX(price) FROM products WHERE department = 'Toys' -- we can't use ; here and this is the subquery 
+);

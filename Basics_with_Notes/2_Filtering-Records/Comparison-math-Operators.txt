@@ -1,0 +1,11 @@
+1.  (=)  ->  are the values equal?              2.  (<=)  ->  Is the value on the left lesser or equal to?
+
+3.  (>)  ->  Is the value on the left greater?  4.  (<>)  ->  Are the values not equal? 
+
+5.  (<)  ->  Is the value on the left less?     6.  (!=)  ->  Are the values not equal?
+
+7.  (>=)  ->  Is the value on the left greater or equal to?  
+
+8.  BETWEEN  ->  Is the value between two other values ?
+
+9.  IN  ->  Is the value present in a list?    10.  NOT IN  ->  Is the value not present in a list?

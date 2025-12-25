@@ -1,0 +1,11 @@
+-- we can access photos in photos table , using user_id like this:
+SELECT * FROM photos 
+WHERE user_id = 4; -- we'll get all rows of photos table , whose has user_id = 4
+
+
+-- but from users table, we want to access those photos , by that foreign key or user_id
+-- so for this,
+SELECT username,url FROM photos -- here username and photos come from different tables but it'll work for the JOIN keyword
+JOIN users ON users.id = photos.user_id; -- by using this JOIN keywork and then using ON keyword to indicate primary key,, 
+-- we can access photos user_id .. mainly find those user_id whose got match with primary key of users
+

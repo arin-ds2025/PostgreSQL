@@ -1,0 +1,42 @@
+SELECT user_id, MAX(id) -- here id means the unique comment ids
+FROM comments
+GROUP BY user_id
+
+
+
+SELECT user_id, MIN(id) -- here id means the unique comment ids
+FROM comments
+GROUP BY user_id
+
+
+
+SELECT user_id, COUNT(id) -- here id means the unique comment ids
+FROM comments
+GROUP BY user_id
+
+
+
+SELECT user_id, AVG(id) -- here id means the unique comment ids
+FROM comments
+GROUP BY user_id
+
+
+
+SELECT user_id, SUM(id) -- here id means the unique comment ids
+FROM comments
+GROUP BY user_id
+
+
+
+-- we can also change the header name in every aggregate function,like this
+
+SELECT user_id, COUNT(id) AS count_of_cmnt_id
+FROM comments
+GROUP BY user_id
+
+
+-- if we count the user_id of photos table it'll show 20, cuase photos table have 20 rows whose have user_d
+SELECT COUNT(user_id) FROM photos;
+
+-- but if we count the total rows of photos table, using * . then it'll show 21 , cause there are 21 total rows in photos table, here 20 rows have user_id and one row has NULL user_id
+SELECT COUNT(*) FROM photos;

@@ -1,0 +1,6 @@
+-- using pre created tables and insert values
+
+-- first example: 
+SELECT user_id
+FROM comments
+GROUP BY user_id -- using GROUP BY keyword, it'll show only unique values

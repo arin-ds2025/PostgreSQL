@@ -1,0 +1,6 @@
+-- here if we insert extra username and extra url.. then both will show for using FULL JOIN keywords
+
+SELECT url,username FROM photos
+FULL JOIN users ON users.id = photos.user_id
+
+-- here left is photos(FROM) and right is users(JOIN)

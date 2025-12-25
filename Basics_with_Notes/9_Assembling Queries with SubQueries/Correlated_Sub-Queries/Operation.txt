@@ -1,0 +1,11 @@
+-- if there are many products from same department , then we've to print the expensive one from them
+-- and we've to do this with all departments
+
+
+SELECT name, department, price FROM products AS p1 -- add alias, so that we can compare this main queries with the sub-queries
+WHERE p1.price = ( -- doesn't need to use p1.price here, we can also use price only..
+	SELECT MAX(price) FROM products AS p2 -- add alias, so that we can compare this sub-queries with the main queries
+	WHERE p2.department = p1.department
+);
+
+-- it will work like nested loop

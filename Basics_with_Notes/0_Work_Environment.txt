@@ -1,0 +1,5 @@
+I'm practicing these basic queries in these online PostgreSQL play-grounds:
+
+1.   https://aiven.io/tools/pg-playground
+
+2.   https://pg-sql.com/

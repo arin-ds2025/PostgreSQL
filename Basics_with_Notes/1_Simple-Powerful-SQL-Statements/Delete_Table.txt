@@ -1,0 +1,2 @@
+-- we can delete the whole table using DROP keyword then TABLE keyword and at last the name of the table,
+DROP TABLE photos;

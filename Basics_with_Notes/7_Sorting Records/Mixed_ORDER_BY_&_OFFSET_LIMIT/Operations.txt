@@ -1,0 +1,17 @@
+-- using pre created tables and inserted values
+
+SELECT * FROM products
+ORDER BY price DESC
+LIMIT 10;
+
+
+SELECT * FROM products
+ORDER BY price
+OFFSET 60;
+
+
+
+SELECT * FROM products
+ORDER BY price DESC
+LIMIT 15
+OFFSET 5;   -- this means skip first 5 products and then print limited 15 products according to ORDER BY

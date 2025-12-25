@@ -1,0 +1,26 @@
+SELECT (
+	SELECT MAX(price) -- here we've to select those things which will return only one value.. if it returns more than one value and it'll through error
+	FROM products
+);
+
+
+
+-- x x x x x x
+SELECT (
+	SELECT price -- this is not valid, cause it'll return more than one value. but if we put any WHERE clause which can return one value,then it'll work
+	FROM products
+);
+
+
+
+-- more operation , like:
+SELECT (
+	SELECT AVG(price) FROM products
+) / (
+	SELECT MAX(price) FROM products   
+) AS ratio_avg_max; -- we can do this also for a single value.. and here the ratio of avg and max price will return just one value
+
+
+-- we can also print multiple single things, like:
+SELECT ( SELECT MAX(price) as mxp FROM products ) , (SELECT MAX(weight) as mxw FROM products), 
+(SELECT AVG(weight) AS avg_w FROM products) -- etc

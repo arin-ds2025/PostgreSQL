@@ -1,0 +1,11 @@
+-- with sub-queries
+SELECT name, (SELECT COUNT(*) FROM orders AS o WHERE o.product_id = p.id) AS num_orders
+FROM products AS p
+
+
+
+-- without sub-queries
+SELECT name,COUNT(orders.product_id)
+FROM products AS p
+JOIN orders ON orders.product_id = p.id
+GROUP BY p.id,p.name -- we've to give those select items here also

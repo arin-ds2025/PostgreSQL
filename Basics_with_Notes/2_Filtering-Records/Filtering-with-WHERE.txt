@@ -1,0 +1,16 @@
+-- in case of cities table, which has been already made
+
+-- we can filtering the table with some criterila , using WHERE keyword and then the criteria we want
+SELECT country, name, area FROM cities WHERE area > 2000; 
+-- those country, name and area will print whose area is greater than 2000
+
+
+-- or
+SELECT country, name, area FROM cities WHERE area = 8223; -- it will print those rows which has area = 8223; 
+
+
+-- or 
+SELECT country, name, area FROM cities WHERE area != 8223; -- it will print those rows except whose has area = 8223;
+-- (<>) does the same thing , which (!=) can
+
+

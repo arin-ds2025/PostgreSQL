@@ -1,0 +1,6 @@
+CREATE TABLE phones (
+	name VARCHAR(50),
+	manufacture VARCHAR(50),
+	price INTEGER,
+	units_sold INTEGER
+);

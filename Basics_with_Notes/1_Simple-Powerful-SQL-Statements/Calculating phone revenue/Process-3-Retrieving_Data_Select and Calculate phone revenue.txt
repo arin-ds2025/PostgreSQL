@@ -1,0 +1,1 @@
+SELECT manufacture, name, units_sold * price AS revenue FROM phones;

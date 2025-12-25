@@ -1,0 +1,6 @@
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+	username VARCHAR(50)
+);
+
+-- PRIMARY KEY keywords generate unique primary key for us and SERIAL keyword used for get unique serial primary keys

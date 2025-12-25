@@ -1,0 +1,4 @@
+SELECT 
+(SELECT MAX(price) AS max_price FROM phones),
+(SELECT MIN(price) AS min_price FROM phones),
+(SELECT AVG(price) AS avg_price FROM phones);

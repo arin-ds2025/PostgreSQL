@@ -1,0 +1,4 @@
+-- in case of cities table, which has been already made
+
+SELECT country, ' - ' || LENGTH(country) AS length_c , population  -- LENGTH() always returns negative values
+FROM cities;

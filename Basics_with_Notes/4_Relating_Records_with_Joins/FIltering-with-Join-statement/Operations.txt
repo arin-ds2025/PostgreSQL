@@ -1,0 +1,4 @@
+SELECT comments.user_id AS cmnts_user_id, contents, url, photos.user_id AS phts_user_id
+FROM comments
+JOIN photos ON photos.id = comments.photo_id
+WHERE comments.user_id = photos.user_id 

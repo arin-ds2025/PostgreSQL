@@ -1,0 +1,9 @@
+--using pre created tables and inserted values
+
+
+
+SELECT photo_id , count(*)
+FROM comments
+WHERE photo_id < 3
+GROUP BY photo_id
+HAVING COUNT(*) > 2; -- this means after all those things, photo_id should have more than 2 comments

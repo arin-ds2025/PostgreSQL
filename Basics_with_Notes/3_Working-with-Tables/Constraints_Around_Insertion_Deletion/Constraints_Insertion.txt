@@ -1,0 +1,18 @@
+-- if we insert an user_id in photots table, which doesn't exist in users table, then it'll through an error.. example:
+INSERT INTO photos (url, user_id)
+
+VALUES ('https://hakao.jpg', 69); -- here the 69 user_id doesn't exist in users table's primary
+
+
+
+-- if we insert a NULL user_id to photots table then it'll not through any error. and it'll store to database
+INSERT INTO photos (url, user_id)
+
+VALUES ('https://ogge.jpg', NULL);
+
+-- and we can see this row with NULL user_id by,
+SELECT * FROM photos;
+
+
+
+

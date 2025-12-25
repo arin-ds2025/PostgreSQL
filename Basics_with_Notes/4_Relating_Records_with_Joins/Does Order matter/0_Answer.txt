@@ -1,0 +1,4 @@
+Yes, it is.. but only for RIGHT JOIN and LEFT JOIN
+not for INNER or OUTER JOIN..
+
+An example is given with LEFT JOIN:

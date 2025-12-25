@@ -1,0 +1,4 @@
+SELECT title, name, rating
+FROM ratings
+JOIN books ON books.id = ratings.book_id
+JOIN authors ON authors.id = books.author_id AND authors.id = ratings.reviewer_id

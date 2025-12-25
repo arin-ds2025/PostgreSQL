@@ -1,0 +1,16 @@
+-- in case of cities table, which has been already made
+
+SELECT name,country,area FROM cities WHERE area BETWEEN 1000 AND 4000; -- this will print those rows, (we've to use AND with BETWEEN)
+-- whose area are between 1000 and 4000
+
+
+SELECT name,country,population FROM cities WHERE name IN ('Islamabad' , 'Shanghai'); -- this will print those rows,
+-- whose name are Islamabad and Shanghai
+
+
+SELECT name,UPPER(country),population FROM cities WHERE country NOT IN ('Bangladesh' , 'Japan'); -- this will print all rows, 
+-- except whose country are Bangladesh and Japan  and here those countries are print with upper case
+
+
+-- after use WHERE we can check multiple option using AND , OR 
+SELECT name,area FROM cities WHERE country NOT IN ('Bangladesh') AND area NOT IN (8223) OR population IN (12073022) ;

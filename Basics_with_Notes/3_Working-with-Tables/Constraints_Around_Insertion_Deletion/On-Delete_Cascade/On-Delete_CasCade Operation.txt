@@ -1,0 +1,9 @@
+-- now id we delete any row of users table then those rows whose referencing the users id in photos table, those will also delete
+DELETE FROM users
+WHERE id = 4
+
+-- now to check users table
+SELECT * FROM users
+
+-- and to check photots table
+SELECT * FROM photots
