@@ -1,4 +1,0 @@
-SELECT name FROM phones
-ORDER BY price DESC
-OFFSET 1
-LIMIT 2;
